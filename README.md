@@ -1,1 +1,3 @@
 # restcalc
+
+basic REST calculator
