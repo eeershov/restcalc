@@ -8,7 +8,7 @@ function getParsedClientInput(clientInput) {
   const onlyKnownChars = clientInput.match(/[0-9]+|\,+|\.+|\++|\-+|\*+|\/+|\S/g).join('').replace(",",".")
   
   // get array of nums and operators
-  const re = /[+-]?\d+.?\d*|[\/\*\+\-]/g
+  const re = /[+-]?\d+\.?\d*|[\/\*\+\-]/g
   const regexedInput = onlyKnownChars.match(re)
 
   // check and convert for nums and operators
@@ -80,7 +80,7 @@ function computeExpression(expression) {
     default:
       return 'Error on evaluation'
   }
-  
+
 };
 
 
